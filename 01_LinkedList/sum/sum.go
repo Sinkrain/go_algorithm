@@ -11,7 +11,7 @@ func SumLinkedList(n int){
 	fmt.Println("\n\nSumLinkedList")
 
 	l := createLinkedList(n)
-	r := createLinkedList(n)
+	r := createLinkedList(n+2)
 
 	// SumLinkedListByCount(l, r)
 
@@ -21,7 +21,7 @@ func SumLinkedList(n int){
 
 func createLinkedList(n int)LNode{
 	
-	numSlice := BuildNumSlicet(n, 10)
+	numSlice := BuildNumSlice(n, 10)
 	fmt.Println("Num Slice: ", numSlice)
 	numLinkedList := BuildLinkedList(numSlice)
 	ReadLinkedSlice(&numLinkedList)

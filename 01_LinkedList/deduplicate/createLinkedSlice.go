@@ -22,8 +22,8 @@ func ReadLinkedSlice(l *LNode){
 	}
 }
 
-// BuildNumSlicet create numSlice
-func BuildNumSlicet(n int, limit int) (numSlice []int){
+// BuildNumSlice create numSlice
+func BuildNumSlice(n int, limit int) (numSlice []int){
 	for i:=0; i<n; i++{
 		numSlice = append(numSlice, rand.Intn(limit))
 	}
