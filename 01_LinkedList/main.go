@@ -1,23 +1,24 @@
 package main
 
 import (
-	// "linkedList/deduplicate"
-	"linkedList/sum"
+	"linkedList/novel"
 	"linkedList/reverse"
+	"linkedList/deduplicate"
+	"linkedList/sum"
 )
 
 
 func main(){
 
 	// Noval example for LinkedList
-	// novel := WriteNovel()
-	// ReadNovel(novel)
+	newNovel := novel.WriteNovel()
+	novel.ReadNovel(newNovel)
 
 	// ReverseLinkedList
 	reverse.ReverseLinkedList(6)
 
 	// DeduplicationLinkedList 
-	// deduplicate.DeduplicateLinkedList(32)
+	deduplicate.DeduplicateLinkedList(32)
 
 	// Sum linkedList
 	sum.SumLinkedList(3)
