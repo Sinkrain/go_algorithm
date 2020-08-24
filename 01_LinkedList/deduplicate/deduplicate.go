@@ -5,6 +5,7 @@ import "fmt"
 
 // DeduplicateLinkedList deduplicate linkedList
 func DeduplicateLinkedList(n int){
+	CenterMsg("Deduplicate LinkedList")
 	numSlice := BuildNumSlice(n, 100)
 	fmt.Println("New Slice: ", numSlice)
 	baseLinkSlice := BuildLinkedList(numSlice)
@@ -13,15 +14,15 @@ func DeduplicateLinkedList(n int){
 	ReadLinkedSlice(&numLinkedSlice)
 	
 	// dedulication linkedList by lterate
-	fmt.Println("Letrate Deduplicate Slice:")
+	CenterMsg("Letrate Deduplicate Slice")
 	DeduplicateSlice(&numLinkedSlice)
 	ReadLinkedSlice(&numLinkedSlice)
 	
-	fmt.Println("Recursion Deduplicate Slice")
+	CenterMsg("Recursion Deduplicate Slice")
 	RecursionDeduplicate(&baseLinkSlice)
 	ReadLinkedSlice(&baseLinkSlice)
 	
-	fmt.Println("Hasset Deduplicate Slice")
+	CenterMsg("Hasset Deduplicate Slice")
 	HasSetLinkedList(&numLinkedSlice2)
 	ReadLinkedSlice(&baseLinkSlice)
 

@@ -8,6 +8,7 @@ import (
 
 // SumLinkedListByCount add linkedList by count
 func SumLinkedListByCount(l LNode, r LNode){
+	fmt.Println("\nSum LinkedList by Count")
 	lNum := CountSinglyLinkedList(&l)
 	rNum := CountSinglyLinkedList(&r)
 	fmt.Printf("\nLinkedNum(%d + %d)=: %d", lNum, rNum, lNum + rNum)

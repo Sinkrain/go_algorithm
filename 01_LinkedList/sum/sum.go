@@ -8,13 +8,11 @@ import (
 
 // SumLinkedList sum for linkedList
 func SumLinkedList(n int){
-	fmt.Println("\n\nSumLinkedList")
 
 	l := createLinkedList(n)
 	r := createLinkedList(n+2)
 
-	// SumLinkedListByCount(l, r)
-
+	SumLinkedListByCount(l, r)
 	SumLinkedListByAdd(l, r)
 }
 

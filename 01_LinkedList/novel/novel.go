@@ -2,6 +2,7 @@ package novel
 
 import (
 	"fmt"
+	"linkedList/deduplicate"
 )
 
 
@@ -112,7 +113,7 @@ func InsertContent(head *Content, content *Content){
 
 // ReadNovel start read novel
 func ReadNovel(novel *Chapter){
-	fmt.Println("<=== Start Read Novel ===>")
+	deduplicate.CenterMsg("Start Read Novel")
 	chapter := novel.Next
 	for {
 		if chapter == nil{
@@ -132,6 +133,6 @@ func ReadNovel(novel *Chapter){
 		chapter = chapter.Next
 	}
 
-	fmt.Println("<========= END =========>")
+	deduplicate.CenterMsg("END")
 
 }

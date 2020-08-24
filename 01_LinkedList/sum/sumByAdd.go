@@ -10,7 +10,7 @@ import (
 
 // SumLinkedListByAdd sum LinkedList by add
 func SumLinkedListByAdd(l LNode, r LNode){
-	fmt.Println("\nSum LinkedList by Add")
+	CenterMsg("Sum LinkedList by Add")
 	numLinkedList := AddLinkedList(&l, &r)
 	ReadLinkedSlice(numLinkedList)
 	Reverse(numLinkedList)
