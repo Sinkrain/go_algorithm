@@ -7,7 +7,8 @@ import (
 	// "linkedList/sum"
 	// "linkedList/resort"
 	// "linkedList/reciprocal"
-	"linkedList/loop"
+	// "linkedList/loop"
+	"linkedList/flip"
 )
 
 
@@ -33,5 +34,10 @@ func main(){
 	// reciprocal.ReciprovalLinkedList(16, 3)
 
 	// Loop
-	loop.CheckIsLoopLinkedList(16)
+	// loop.CheckIsLoopLinkedList(16)
+
+	// Flip LinkedList
+	flip.FlipLinkedList(18)
+
+	flip.FlipNthGroupLinkedList(18)
 }
